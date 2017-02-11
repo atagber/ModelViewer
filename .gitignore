@@ -1,0 +1,21 @@
+# xcode noise
+DerivedData
+xcuserdata
+*.xcscmblueprint
+project.xcworkspace
+build/*
+Pods/*
+
+# osx noise
+.DS_Store
+
+# appcode
+.idea
+!.idea/codeStyleSettings.xml
+
+# build
+Releases/
+Gymfile
+
+# special files
+.ruby-version
