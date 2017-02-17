@@ -7,88 +7,362 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2BF8A8C1E48BCA700338022 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF8A8B1E48BCA700338022 /* main.m */; };
-		C2BF8A8F1E48BCA700338022 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF8A8E1E48BCA700338022 /* AppDelegate.m */; };
-		C2BF8A921E48BCA700338022 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF8A911E48BCA700338022 /* ViewController.m */; };
-		C2BF8A951E48BCA800338022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BF8A931E48BCA800338022 /* Main.storyboard */; };
-		C2BF8A971E48BCA800338022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2BF8A961E48BCA800338022 /* Assets.xcassets */; };
-		C2BF8A9A1E48BCA800338022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BF8A981E48BCA800338022 /* LaunchScreen.storyboard */; };
+		C203AA3E1E4DAB80003810C4 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA3D1E4DAB80003810C4 /* Settings.m */; };
+		C203AA411E4DABA5003810C4 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA401E4DABA5003810C4 /* Attribute.m */; };
+		C203AA441E4DABED003810C4 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA431E4DABED003810C4 /* Scene.m */; };
+		C203AA471E4DAC34003810C4 /* ModelSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA461E4DAC34003810C4 /* ModelSetting.m */; };
+		C203AA6F1E4DB1C3003810C4 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA6E1E4DB1C3003810C4 /* Program.m */; };
+		C203AA721E4DB5FC003810C4 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA711E4DB5FC003810C4 /* Model.m */; };
+		C203AA761E4DB852003810C4 /* NSBundle+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA751E4DB852003810C4 /* NSBundle+Helper.m */; };
+		C203AA791E4DBA5E003810C4 /* NSObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA781E4DBA5E003810C4 /* NSObject+Helper.m */; };
+		C203AA7C1E4DC89E003810C4 /* Model+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA7B1E4DC89E003810C4 /* Model+Factory.m */; };
+		C203AA801E4DCEDB003810C4 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C203AA7E1E4DCEDB003810C4 /* shader.fsh */; };
+		C203AA811E4DCEDB003810C4 /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C203AA7F1E4DCEDB003810C4 /* shader.vsh */; };
+		C203AA841E4DE258003810C4 /* Submesh.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA831E4DE258003810C4 /* Submesh.m */; };
+		C203AA8A1E4DF035003810C4 /* Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = C203AA891E4DF035003810C4 /* Texture.m */; };
+		C203AAB31E4DFAB4003810C4 /* Lara_Accessories_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA931E4DFAB4003810C4 /* Lara_Accessories_D.tga */; };
+		C203AAB41E4DFAB4003810C4 /* Lara_Accessories_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA941E4DFAB4003810C4 /* Lara_Accessories_N.tga */; };
+		C203AAB51E4DFAB4003810C4 /* Lara_Accessories_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA951E4DFAB4003810C4 /* Lara_Accessories_S.tga */; };
+		C203AAB61E4DFAB4003810C4 /* Lara_Boots_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA961E4DFAB4003810C4 /* Lara_Boots_D.tga */; };
+		C203AAB71E4DFAB4003810C4 /* Lara_Boots_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA971E4DFAB4003810C4 /* Lara_Boots_N.tga */; };
+		C203AAB81E4DFAB4003810C4 /* Lara_Boots_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA981E4DFAB4003810C4 /* Lara_Boots_S.tga */; };
+		C203AAB91E4DFAB4003810C4 /* Lara_Croft.dae in Resources */ = {isa = PBXBuildFile; fileRef = C203AA991E4DFAB4003810C4 /* Lara_Croft.dae */; };
+		C203AABA1E4DFAB4003810C4 /* Lara_Croft.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9A1E4DFAB4003810C4 /* Lara_Croft.mtl */; };
+		C203AABB1E4DFAB4003810C4 /* Lara_Croft.obj in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9B1E4DFAB4003810C4 /* Lara_Croft.obj */; };
+		C203AABC1E4DFAB4003810C4 /* Lara_Eye_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9C1E4DFAB4003810C4 /* Lara_Eye_D.tga */; };
+		C203AABD1E4DFAB4003810C4 /* Lara_Eye_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9D1E4DFAB4003810C4 /* Lara_Eye_N.tga */; };
+		C203AABE1E4DFAB4003810C4 /* Lara_Eyebrow_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9E1E4DFAB4003810C4 /* Lara_Eyebrow_D.tga */; };
+		C203AABF1E4DFAB4003810C4 /* Lara_Eyebrow_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AA9F1E4DFAB4003810C4 /* Lara_Eyebrow_N.tga */; };
+		C203AAC01E4DFAB4003810C4 /* Lara_Eyeref_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA01E4DFAB4003810C4 /* Lara_Eyeref_D.tga */; };
+		C203AAC11E4DFAB4003810C4 /* Lara_Hair_Band_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA11E4DFAB4003810C4 /* Lara_Hair_Band_D.tga */; };
+		C203AAC21E4DFAB4003810C4 /* Lara_Hair_Band_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA21E4DFAB4003810C4 /* Lara_Hair_Band_N.tga */; };
+		C203AAC31E4DFAB4003810C4 /* Lara_Hair_Band_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA31E4DFAB4003810C4 /* Lara_Hair_Band_S.tga */; };
+		C203AAC41E4DFAB4003810C4 /* Lara_Hair_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA41E4DFAB4003810C4 /* Lara_Hair_D.tga */; };
+		C203AAC51E4DFAB4003810C4 /* Lara_Hair_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA51E4DFAB4003810C4 /* Lara_Hair_N.tga */; };
+		C203AAC61E4DFAB4003810C4 /* Lara_Hair_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA61E4DFAB4003810C4 /* Lara_Hair_S.tga */; };
+		C203AAC71E4DFAB4003810C4 /* Lara_Hands_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA71E4DFAB4003810C4 /* Lara_Hands_D.tga */; };
+		C203AAC81E4DFAB4003810C4 /* Lara_Hands_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA81E4DFAB4003810C4 /* Lara_Hands_N.tga */; };
+		C203AAC91E4DFAB4003810C4 /* Lara_Hands_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAA91E4DFAB4003810C4 /* Lara_Hands_S.tga */; };
+		C203AACA1E4DFAB4003810C4 /* Lara_Head_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAA1E4DFAB4003810C4 /* Lara_Head_D.tga */; };
+		C203AACB1E4DFAB4003810C4 /* Lara_Head_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAB1E4DFAB4003810C4 /* Lara_Head_N.tga */; };
+		C203AACC1E4DFAB4003810C4 /* Lara_Head_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAC1E4DFAB4003810C4 /* Lara_Head_S.tga */; };
+		C203AACD1E4DFAB4003810C4 /* Lara_Pants_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAD1E4DFAB4003810C4 /* Lara_Pants_D.tga */; };
+		C203AACE1E4DFAB4003810C4 /* Lara_Pants_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAE1E4DFAB4003810C4 /* Lara_Pants_N.tga */; };
+		C203AACF1E4DFAB4003810C4 /* Lara_Pants_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAAF1E4DFAB4003810C4 /* Lara_Pants_S.tga */; };
+		C203AAD01E4DFAB4003810C4 /* Lara_Torso_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAB01E4DFAB4003810C4 /* Lara_Torso_D.tga */; };
+		C203AAD11E4DFAB4003810C4 /* Lara_Torso_N.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAB11E4DFAB4003810C4 /* Lara_Torso_N.tga */; };
+		C203AAD21E4DFAB4003810C4 /* Lara_Torso_S.tga in Resources */ = {isa = PBXBuildFile; fileRef = C203AAB21E4DFAB4003810C4 /* Lara_Torso_S.tga */; };
+		C20C88D61E4DA3A800D3942F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C88D51E4DA3A800D3942F /* main.m */; };
+		C20C88D91E4DA3A800D3942F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C88D81E4DA3A800D3942F /* AppDelegate.m */; };
+		C20C88DC1E4DA3A800D3942F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C88DB1E4DA3A800D3942F /* MainViewController.m */; };
+		C20C88DF1E4DA3A800D3942F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20C88DD1E4DA3A800D3942F /* Main.storyboard */; };
+		C20C88E11E4DA3A800D3942F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20C88E01E4DA3A800D3942F /* Assets.xcassets */; };
+		C20C88E41E4DA3A800D3942F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20C88E21E4DA3A800D3942F /* LaunchScreen.storyboard */; };
+		C20C88ED1E4DA3C200D3942F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20C88EC1E4DA3C200D3942F /* GLKit.framework */; };
+		C20C88EF1E4DA3C800D3942F /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20C88EE1E4DA3C800D3942F /* ModelIO.framework */; };
+		C20C88F11E4DA3D100D3942F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20C88F01E4DA3D100D3942F /* OpenGLES.framework */; };
+		C20C88F91E4DA53900D3942F /* SceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C88F81E4DA53900D3942F /* SceneViewController.m */; };
+		C221A7181E51895A0055D5D3 /* Heart.3DS in Resources */ = {isa = PBXBuildFile; fileRef = C221A7141E51895A0055D5D3 /* Heart.3DS */; };
+		C221A7191E51895A0055D5D3 /* Heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C221A7151E51895A0055D5D3 /* Heart.jpg */; };
+		C221A71A1E51895A0055D5D3 /* Heart.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C221A7161E51895A0055D5D3 /* Heart.mtl */; };
+		C221A71B1E51895A0055D5D3 /* Heart.obj in Resources */ = {isa = PBXBuildFile; fileRef = C221A7171E51895A0055D5D3 /* Heart.obj */; };
+		C2C2D7D41E51B7F9000F00DB /* Floor.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2D7D31E51B7F9000F00DB /* Floor.m */; };
+		C2F634541E520575001B36F6 /* simple_object.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C2F634531E520575001B36F6 /* simple_object.fsh */; };
+		C2F634561E52058D001B36F6 /* simple_object.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C2F634551E52058D001B36F6 /* simple_object.vsh */; };
+		C2F634581E52066D001B36F6 /* sun.obj in Resources */ = {isa = PBXBuildFile; fileRef = C2F634571E52066D001B36F6 /* sun.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2BF8A871E48BCA700338022 /* ModelViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2BF8A8B1E48BCA700338022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2BF8A8D1E48BCA700338022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C2BF8A8E1E48BCA700338022 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2BF8A901E48BCA700338022 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C2BF8A911E48BCA700338022 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C2BF8A941E48BCA800338022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C2BF8A961E48BCA800338022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C2BF8A991E48BCA800338022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C2BF8A9B1E48BCA800338022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C203AA3C1E4DAB80003810C4 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		C203AA3D1E4DAB80003810C4 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		C203AA3F1E4DABA5003810C4 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		C203AA401E4DABA5003810C4 /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
+		C203AA421E4DABED003810C4 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		C203AA431E4DABED003810C4 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		C203AA451E4DAC34003810C4 /* ModelSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSetting.h; sourceTree = "<group>"; };
+		C203AA461E4DAC34003810C4 /* ModelSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelSetting.m; sourceTree = "<group>"; };
+		C203AA6D1E4DB1C3003810C4 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		C203AA6E1E4DB1C3003810C4 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		C203AA701E4DB5FC003810C4 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		C203AA711E4DB5FC003810C4 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		C203AA731E4DB697003810C4 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
+		C203AA741E4DB852003810C4 /* NSBundle+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Helper.h"; sourceTree = "<group>"; };
+		C203AA751E4DB852003810C4 /* NSBundle+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Helper.m"; sourceTree = "<group>"; };
+		C203AA771E4DBA5E003810C4 /* NSObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Helper.h"; sourceTree = "<group>"; };
+		C203AA781E4DBA5E003810C4 /* NSObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Helper.m"; sourceTree = "<group>"; };
+		C203AA7A1E4DC89E003810C4 /* Model+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Model+Factory.h"; sourceTree = "<group>"; };
+		C203AA7B1E4DC89E003810C4 /* Model+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Model+Factory.m"; sourceTree = "<group>"; };
+		C203AA7E1E4DCEDB003810C4 /* shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fsh; sourceTree = "<group>"; };
+		C203AA7F1E4DCEDB003810C4 /* shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
+		C203AA821E4DE258003810C4 /* Submesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Submesh.h; sourceTree = "<group>"; };
+		C203AA831E4DE258003810C4 /* Submesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Submesh.m; sourceTree = "<group>"; };
+		C203AA881E4DF035003810C4 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		C203AA891E4DF035003810C4 /* Texture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture.m; sourceTree = "<group>"; };
+		C203AA931E4DFAB4003810C4 /* Lara_Accessories_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Accessories_D.tga; sourceTree = "<group>"; };
+		C203AA941E4DFAB4003810C4 /* Lara_Accessories_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Accessories_N.tga; sourceTree = "<group>"; };
+		C203AA951E4DFAB4003810C4 /* Lara_Accessories_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Accessories_S.tga; sourceTree = "<group>"; };
+		C203AA961E4DFAB4003810C4 /* Lara_Boots_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Boots_D.tga; sourceTree = "<group>"; };
+		C203AA971E4DFAB4003810C4 /* Lara_Boots_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Boots_N.tga; sourceTree = "<group>"; };
+		C203AA981E4DFAB4003810C4 /* Lara_Boots_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Boots_S.tga; sourceTree = "<group>"; };
+		C203AA991E4DFAB4003810C4 /* Lara_Croft.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Lara_Croft.dae; sourceTree = "<group>"; };
+		C203AA9A1E4DFAB4003810C4 /* Lara_Croft.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lara_Croft.mtl; sourceTree = "<group>"; };
+		C203AA9B1E4DFAB4003810C4 /* Lara_Croft.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lara_Croft.obj; sourceTree = "<group>"; };
+		C203AA9C1E4DFAB4003810C4 /* Lara_Eye_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Eye_D.tga; sourceTree = "<group>"; };
+		C203AA9D1E4DFAB4003810C4 /* Lara_Eye_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Eye_N.tga; sourceTree = "<group>"; };
+		C203AA9E1E4DFAB4003810C4 /* Lara_Eyebrow_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Eyebrow_D.tga; sourceTree = "<group>"; };
+		C203AA9F1E4DFAB4003810C4 /* Lara_Eyebrow_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Eyebrow_N.tga; sourceTree = "<group>"; };
+		C203AAA01E4DFAB4003810C4 /* Lara_Eyeref_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Eyeref_D.tga; sourceTree = "<group>"; };
+		C203AAA11E4DFAB4003810C4 /* Lara_Hair_Band_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_Band_D.tga; sourceTree = "<group>"; };
+		C203AAA21E4DFAB4003810C4 /* Lara_Hair_Band_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_Band_N.tga; sourceTree = "<group>"; };
+		C203AAA31E4DFAB4003810C4 /* Lara_Hair_Band_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_Band_S.tga; sourceTree = "<group>"; };
+		C203AAA41E4DFAB4003810C4 /* Lara_Hair_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_D.tga; sourceTree = "<group>"; };
+		C203AAA51E4DFAB4003810C4 /* Lara_Hair_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_N.tga; sourceTree = "<group>"; };
+		C203AAA61E4DFAB4003810C4 /* Lara_Hair_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hair_S.tga; sourceTree = "<group>"; };
+		C203AAA71E4DFAB4003810C4 /* Lara_Hands_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hands_D.tga; sourceTree = "<group>"; };
+		C203AAA81E4DFAB4003810C4 /* Lara_Hands_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hands_N.tga; sourceTree = "<group>"; };
+		C203AAA91E4DFAB4003810C4 /* Lara_Hands_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Hands_S.tga; sourceTree = "<group>"; };
+		C203AAAA1E4DFAB4003810C4 /* Lara_Head_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Head_D.tga; sourceTree = "<group>"; };
+		C203AAAB1E4DFAB4003810C4 /* Lara_Head_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Head_N.tga; sourceTree = "<group>"; };
+		C203AAAC1E4DFAB4003810C4 /* Lara_Head_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Head_S.tga; sourceTree = "<group>"; };
+		C203AAAD1E4DFAB4003810C4 /* Lara_Pants_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Pants_D.tga; sourceTree = "<group>"; };
+		C203AAAE1E4DFAB4003810C4 /* Lara_Pants_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Pants_N.tga; sourceTree = "<group>"; };
+		C203AAAF1E4DFAB4003810C4 /* Lara_Pants_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Pants_S.tga; sourceTree = "<group>"; };
+		C203AAB01E4DFAB4003810C4 /* Lara_Torso_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Torso_D.tga; sourceTree = "<group>"; };
+		C203AAB11E4DFAB4003810C4 /* Lara_Torso_N.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Torso_N.tga; sourceTree = "<group>"; };
+		C203AAB21E4DFAB4003810C4 /* Lara_Torso_S.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lara_Torso_S.tga; sourceTree = "<group>"; };
+		C20C88D11E4DA3A800D3942F /* ModelViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20C88D51E4DA3A800D3942F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C20C88D71E4DA3A800D3942F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C20C88D81E4DA3A800D3942F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C20C88DA1E4DA3A800D3942F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C20C88DB1E4DA3A800D3942F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C20C88DE1E4DA3A800D3942F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C20C88E01E4DA3A800D3942F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C20C88E31E4DA3A800D3942F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C20C88E51E4DA3A800D3942F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20C88EC1E4DA3C200D3942F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C20C88EE1E4DA3C800D3942F /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		C20C88F01E4DA3D100D3942F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C20C88F71E4DA53900D3942F /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneViewController.h; sourceTree = "<group>"; };
+		C20C88F81E4DA53900D3942F /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneViewController.m; sourceTree = "<group>"; };
+		C221A7141E51895A0055D5D3 /* Heart.3DS */ = {isa = PBXFileReference; lastKnownFileType = file; path = Heart.3DS; sourceTree = "<group>"; };
+		C221A7151E51895A0055D5D3 /* Heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Heart.jpg; sourceTree = "<group>"; };
+		C221A7161E51895A0055D5D3 /* Heart.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Heart.mtl; sourceTree = "<group>"; };
+		C221A7171E51895A0055D5D3 /* Heart.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Heart.obj; sourceTree = "<group>"; };
+		C2C2D7D21E51B7F9000F00DB /* Floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floor.h; sourceTree = "<group>"; };
+		C2C2D7D31E51B7F9000F00DB /* Floor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Floor.m; sourceTree = "<group>"; };
+		C2F634531E520575001B36F6 /* simple_object.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple_object.fsh; sourceTree = "<group>"; };
+		C2F634551E52058D001B36F6 /* simple_object.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple_object.vsh; sourceTree = "<group>"; };
+		C2F634571E52066D001B36F6 /* sun.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sun.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C2BF8A841E48BCA700338022 /* Frameworks */ = {
+		C20C88CE1E4DA3A800D3942F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20C88F11E4DA3D100D3942F /* OpenGLES.framework in Frameworks */,
+				C20C88EF1E4DA3C800D3942F /* ModelIO.framework in Frameworks */,
+				C20C88ED1E4DA3C200D3942F /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2BF8A7E1E48BCA700338022 = {
+		C203AA7D1E4DCECA003810C4 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF8A891E48BCA700338022 /* ModelViewer */,
-				C2BF8A881E48BCA700338022 /* Products */,
+				C203AA7E1E4DCEDB003810C4 /* shader.fsh */,
+				C203AA7F1E4DCEDB003810C4 /* shader.vsh */,
+				C2F634531E520575001B36F6 /* simple_object.fsh */,
+				C2F634551E52058D001B36F6 /* simple_object.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		C203AA921E4DFAB4003810C4 /* Lara_Croft */ = {
+			isa = PBXGroup;
+			children = (
+				C203AA931E4DFAB4003810C4 /* Lara_Accessories_D.tga */,
+				C203AA941E4DFAB4003810C4 /* Lara_Accessories_N.tga */,
+				C203AA951E4DFAB4003810C4 /* Lara_Accessories_S.tga */,
+				C203AA961E4DFAB4003810C4 /* Lara_Boots_D.tga */,
+				C203AA971E4DFAB4003810C4 /* Lara_Boots_N.tga */,
+				C203AA981E4DFAB4003810C4 /* Lara_Boots_S.tga */,
+				C203AA991E4DFAB4003810C4 /* Lara_Croft.dae */,
+				C203AA9A1E4DFAB4003810C4 /* Lara_Croft.mtl */,
+				C203AA9B1E4DFAB4003810C4 /* Lara_Croft.obj */,
+				C203AA9C1E4DFAB4003810C4 /* Lara_Eye_D.tga */,
+				C203AA9D1E4DFAB4003810C4 /* Lara_Eye_N.tga */,
+				C203AA9E1E4DFAB4003810C4 /* Lara_Eyebrow_D.tga */,
+				C203AA9F1E4DFAB4003810C4 /* Lara_Eyebrow_N.tga */,
+				C203AAA01E4DFAB4003810C4 /* Lara_Eyeref_D.tga */,
+				C203AAA11E4DFAB4003810C4 /* Lara_Hair_Band_D.tga */,
+				C203AAA21E4DFAB4003810C4 /* Lara_Hair_Band_N.tga */,
+				C203AAA31E4DFAB4003810C4 /* Lara_Hair_Band_S.tga */,
+				C203AAA41E4DFAB4003810C4 /* Lara_Hair_D.tga */,
+				C203AAA51E4DFAB4003810C4 /* Lara_Hair_N.tga */,
+				C203AAA61E4DFAB4003810C4 /* Lara_Hair_S.tga */,
+				C203AAA71E4DFAB4003810C4 /* Lara_Hands_D.tga */,
+				C203AAA81E4DFAB4003810C4 /* Lara_Hands_N.tga */,
+				C203AAA91E4DFAB4003810C4 /* Lara_Hands_S.tga */,
+				C203AAAA1E4DFAB4003810C4 /* Lara_Head_D.tga */,
+				C203AAAB1E4DFAB4003810C4 /* Lara_Head_N.tga */,
+				C203AAAC1E4DFAB4003810C4 /* Lara_Head_S.tga */,
+				C203AAAD1E4DFAB4003810C4 /* Lara_Pants_D.tga */,
+				C203AAAE1E4DFAB4003810C4 /* Lara_Pants_N.tga */,
+				C203AAAF1E4DFAB4003810C4 /* Lara_Pants_S.tga */,
+				C203AAB01E4DFAB4003810C4 /* Lara_Torso_D.tga */,
+				C203AAB11E4DFAB4003810C4 /* Lara_Torso_N.tga */,
+				C203AAB21E4DFAB4003810C4 /* Lara_Torso_S.tga */,
+			);
+			path = Lara_Croft;
+			sourceTree = "<group>";
+		};
+		C20C88C81E4DA3A800D3942F = {
+			isa = PBXGroup;
+			children = (
+				C20C88D31E4DA3A800D3942F /* ModelViewer */,
+				C20C88D21E4DA3A800D3942F /* Products */,
+				C20C88EB1E4DA3C200D3942F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C2BF8A881E48BCA700338022 /* Products */ = {
+		C20C88D21E4DA3A800D3942F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF8A871E48BCA700338022 /* ModelViewer.app */,
+				C20C88D11E4DA3A800D3942F /* ModelViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C2BF8A891E48BCA700338022 /* ModelViewer */ = {
+		C20C88D31E4DA3A800D3942F /* ModelViewer */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF8A8D1E48BCA700338022 /* AppDelegate.h */,
-				C2BF8A8E1E48BCA700338022 /* AppDelegate.m */,
-				C2BF8A901E48BCA700338022 /* ViewController.h */,
-				C2BF8A911E48BCA700338022 /* ViewController.m */,
-				C2BF8A931E48BCA800338022 /* Main.storyboard */,
-				C2BF8A961E48BCA800338022 /* Assets.xcassets */,
-				C2BF8A981E48BCA800338022 /* LaunchScreen.storyboard */,
-				C2BF8A9B1E48BCA800338022 /* Info.plist */,
-				C2BF8A8A1E48BCA700338022 /* Supporting Files */,
+				C203AA7D1E4DCECA003810C4 /* Shaders */,
+				C20C88F51E4DA50C00D3942F /* Helpers */,
+				C20C88F41E4DA50800D3942F /* Models */,
+				C20C88F31E4DA50300D3942F /* Assets */,
+				C20C88F21E4DA4ED00D3942F /* Controllers */,
+				C20C88D41E4DA3A800D3942F /* Supporting Files */,
+				C20C88DD1E4DA3A800D3942F /* Main.storyboard */,
 			);
 			path = ModelViewer;
 			sourceTree = "<group>";
 		};
-		C2BF8A8A1E48BCA700338022 /* Supporting Files */ = {
+		C20C88D41E4DA3A800D3942F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2BF8A8B1E48BCA700338022 /* main.m */,
+				C20C88E01E4DA3A800D3942F /* Assets.xcassets */,
+				C20C88E21E4DA3A800D3942F /* LaunchScreen.storyboard */,
+				C20C88E51E4DA3A800D3942F /* Info.plist */,
+				C20C88D71E4DA3A800D3942F /* AppDelegate.h */,
+				C20C88D81E4DA3A800D3942F /* AppDelegate.m */,
+				C20C88D51E4DA3A800D3942F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C20C88EB1E4DA3C200D3942F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20C88F01E4DA3D100D3942F /* OpenGLES.framework */,
+				C20C88EE1E4DA3C800D3942F /* ModelIO.framework */,
+				C20C88EC1E4DA3C200D3942F /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20C88F21E4DA4ED00D3942F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C20C88DA1E4DA3A800D3942F /* MainViewController.h */,
+				C20C88DB1E4DA3A800D3942F /* MainViewController.m */,
+				C20C88F71E4DA53900D3942F /* SceneViewController.h */,
+				C20C88F81E4DA53900D3942F /* SceneViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C20C88F31E4DA50300D3942F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C221A7131E5189490055D5D3 /* Heart */,
+				C203AA921E4DFAB4003810C4 /* Lara_Croft */,
+				C2F634571E52066D001B36F6 /* sun.obj */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C20C88F41E4DA50800D3942F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2D7D11E51B7B6000F00DB /* Drawable */,
+				C203AA3F1E4DABA5003810C4 /* Attribute.h */,
+				C203AA401E4DABA5003810C4 /* Attribute.m */,
+				C203AA3C1E4DAB80003810C4 /* Settings.h */,
+				C203AA3D1E4DAB80003810C4 /* Settings.m */,
+				C203AA451E4DAC34003810C4 /* ModelSetting.h */,
+				C203AA461E4DAC34003810C4 /* ModelSetting.m */,
+				C203AA6D1E4DB1C3003810C4 /* Program.h */,
+				C203AA6E1E4DB1C3003810C4 /* Program.m */,
+				C203AA821E4DE258003810C4 /* Submesh.h */,
+				C203AA831E4DE258003810C4 /* Submesh.m */,
+				C203AA881E4DF035003810C4 /* Texture.h */,
+				C203AA891E4DF035003810C4 /* Texture.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C20C88F51E4DA50C00D3942F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C203AA741E4DB852003810C4 /* NSBundle+Helper.h */,
+				C203AA751E4DB852003810C4 /* NSBundle+Helper.m */,
+				C203AA771E4DBA5E003810C4 /* NSObject+Helper.h */,
+				C203AA781E4DBA5E003810C4 /* NSObject+Helper.m */,
+				C203AA7A1E4DC89E003810C4 /* Model+Factory.h */,
+				C203AA7B1E4DC89E003810C4 /* Model+Factory.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C221A7131E5189490055D5D3 /* Heart */ = {
+			isa = PBXGroup;
+			children = (
+				C221A7141E51895A0055D5D3 /* Heart.3DS */,
+				C221A7151E51895A0055D5D3 /* Heart.jpg */,
+				C221A7161E51895A0055D5D3 /* Heart.mtl */,
+				C221A7171E51895A0055D5D3 /* Heart.obj */,
+			);
+			name = Heart;
+			sourceTree = "<group>";
+		};
+		C2C2D7D11E51B7B6000F00DB /* Drawable */ = {
+			isa = PBXGroup;
+			children = (
+				C203AA421E4DABED003810C4 /* Scene.h */,
+				C203AA431E4DABED003810C4 /* Scene.m */,
+				C203AA731E4DB697003810C4 /* Drawable.h */,
+				C203AA701E4DB5FC003810C4 /* Model.h */,
+				C203AA711E4DB5FC003810C4 /* Model.m */,
+				C2C2D7D21E51B7F9000F00DB /* Floor.h */,
+				C2C2D7D31E51B7F9000F00DB /* Floor.m */,
+			);
+			name = Drawable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2BF8A861E48BCA700338022 /* ModelViewer */ = {
+		C20C88D01E4DA3A800D3942F /* ModelViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2BF8A9E1E48BCA800338022 /* Build configuration list for PBXNativeTarget "ModelViewer" */;
+			buildConfigurationList = C20C88E81E4DA3A800D3942F /* Build configuration list for PBXNativeTarget "ModelViewer" */;
 			buildPhases = (
-				C2BF8A831E48BCA700338022 /* Sources */,
-				C2BF8A841E48BCA700338022 /* Frameworks */,
-				C2BF8A851E48BCA700338022 /* Resources */,
+				C20C88CD1E4DA3A800D3942F /* Sources */,
+				C20C88CE1E4DA3A800D3942F /* Frameworks */,
+				C20C88CF1E4DA3A800D3942F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -96,25 +370,26 @@
 			);
 			name = ModelViewer;
 			productName = ModelViewer;
-			productReference = C2BF8A871E48BCA700338022 /* ModelViewer.app */;
+			productReference = C20C88D11E4DA3A800D3942F /* ModelViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C2BF8A7F1E48BCA700338022 /* Project object */ = {
+		C20C88C91E4DA3A800D3942F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = Arman;
+				ORGANIZATIONNAME = 3d4medical;
 				TargetAttributes = {
-					C2BF8A861E48BCA700338022 = {
+					C20C88D01E4DA3A800D3942F = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 962RV8956Y;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = C2BF8A821E48BCA700338022 /* Build configuration list for PBXProject "ModelViewer" */;
+			buildConfigurationList = C20C88CC1E4DA3A800D3942F /* Build configuration list for PBXProject "ModelViewer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -122,55 +397,109 @@
 				en,
 				Base,
 			);
-			mainGroup = C2BF8A7E1E48BCA700338022;
-			productRefGroup = C2BF8A881E48BCA700338022 /* Products */;
+			mainGroup = C20C88C81E4DA3A800D3942F;
+			productRefGroup = C20C88D21E4DA3A800D3942F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2BF8A861E48BCA700338022 /* ModelViewer */,
+				C20C88D01E4DA3A800D3942F /* ModelViewer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C2BF8A851E48BCA700338022 /* Resources */ = {
+		C20C88CF1E4DA3A800D3942F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2BF8A9A1E48BCA800338022 /* LaunchScreen.storyboard in Resources */,
-				C2BF8A971E48BCA800338022 /* Assets.xcassets in Resources */,
-				C2BF8A951E48BCA800338022 /* Main.storyboard in Resources */,
+				C221A71A1E51895A0055D5D3 /* Heart.mtl in Resources */,
+				C203AAC81E4DFAB4003810C4 /* Lara_Hands_N.tga in Resources */,
+				C203AAB91E4DFAB4003810C4 /* Lara_Croft.dae in Resources */,
+				C203AACA1E4DFAB4003810C4 /* Lara_Head_D.tga in Resources */,
+				C221A7181E51895A0055D5D3 /* Heart.3DS in Resources */,
+				C203AABB1E4DFAB4003810C4 /* Lara_Croft.obj in Resources */,
+				C203AACE1E4DFAB4003810C4 /* Lara_Pants_N.tga in Resources */,
+				C20C88E41E4DA3A800D3942F /* LaunchScreen.storyboard in Resources */,
+				C203AABA1E4DFAB4003810C4 /* Lara_Croft.mtl in Resources */,
+				C203AAC91E4DFAB4003810C4 /* Lara_Hands_S.tga in Resources */,
+				C20C88E11E4DA3A800D3942F /* Assets.xcassets in Resources */,
+				C20C88DF1E4DA3A800D3942F /* Main.storyboard in Resources */,
+				C203AACF1E4DFAB4003810C4 /* Lara_Pants_S.tga in Resources */,
+				C203AAB51E4DFAB4003810C4 /* Lara_Accessories_S.tga in Resources */,
+				C203AA801E4DCEDB003810C4 /* shader.fsh in Resources */,
+				C203AACD1E4DFAB4003810C4 /* Lara_Pants_D.tga in Resources */,
+				C203AAC11E4DFAB4003810C4 /* Lara_Hair_Band_D.tga in Resources */,
+				C203AA811E4DCEDB003810C4 /* shader.vsh in Resources */,
+				C203AAC01E4DFAB4003810C4 /* Lara_Eyeref_D.tga in Resources */,
+				C221A7191E51895A0055D5D3 /* Heart.jpg in Resources */,
+				C203AABE1E4DFAB4003810C4 /* Lara_Eyebrow_D.tga in Resources */,
+				C203AAC51E4DFAB4003810C4 /* Lara_Hair_N.tga in Resources */,
+				C2F634561E52058D001B36F6 /* simple_object.vsh in Resources */,
+				C203AAD11E4DFAB4003810C4 /* Lara_Torso_N.tga in Resources */,
+				C203AABF1E4DFAB4003810C4 /* Lara_Eyebrow_N.tga in Resources */,
+				C203AACB1E4DFAB4003810C4 /* Lara_Head_N.tga in Resources */,
+				C203AAD21E4DFAB4003810C4 /* Lara_Torso_S.tga in Resources */,
+				C2F634541E520575001B36F6 /* simple_object.fsh in Resources */,
+				C203AAC41E4DFAB4003810C4 /* Lara_Hair_D.tga in Resources */,
+				C203AAB41E4DFAB4003810C4 /* Lara_Accessories_N.tga in Resources */,
+				C2F634581E52066D001B36F6 /* sun.obj in Resources */,
+				C221A71B1E51895A0055D5D3 /* Heart.obj in Resources */,
+				C203AABD1E4DFAB4003810C4 /* Lara_Eye_N.tga in Resources */,
+				C203AAC61E4DFAB4003810C4 /* Lara_Hair_S.tga in Resources */,
+				C203AAC21E4DFAB4003810C4 /* Lara_Hair_Band_N.tga in Resources */,
+				C203AAB81E4DFAB4003810C4 /* Lara_Boots_S.tga in Resources */,
+				C203AAC31E4DFAB4003810C4 /* Lara_Hair_Band_S.tga in Resources */,
+				C203AAB31E4DFAB4003810C4 /* Lara_Accessories_D.tga in Resources */,
+				C203AAD01E4DFAB4003810C4 /* Lara_Torso_D.tga in Resources */,
+				C203AAC71E4DFAB4003810C4 /* Lara_Hands_D.tga in Resources */,
+				C203AAB61E4DFAB4003810C4 /* Lara_Boots_D.tga in Resources */,
+				C203AAB71E4DFAB4003810C4 /* Lara_Boots_N.tga in Resources */,
+				C203AACC1E4DFAB4003810C4 /* Lara_Head_S.tga in Resources */,
+				C203AABC1E4DFAB4003810C4 /* Lara_Eye_D.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C2BF8A831E48BCA700338022 /* Sources */ = {
+		C20C88CD1E4DA3A800D3942F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2BF8A921E48BCA700338022 /* ViewController.m in Sources */,
-				C2BF8A8F1E48BCA700338022 /* AppDelegate.m in Sources */,
-				C2BF8A8C1E48BCA700338022 /* main.m in Sources */,
+				C203AA721E4DB5FC003810C4 /* Model.m in Sources */,
+				C203AA6F1E4DB1C3003810C4 /* Program.m in Sources */,
+				C203AA791E4DBA5E003810C4 /* NSObject+Helper.m in Sources */,
+				C203AA761E4DB852003810C4 /* NSBundle+Helper.m in Sources */,
+				C2C2D7D41E51B7F9000F00DB /* Floor.m in Sources */,
+				C203AA441E4DABED003810C4 /* Scene.m in Sources */,
+				C203AA841E4DE258003810C4 /* Submesh.m in Sources */,
+				C203AA471E4DAC34003810C4 /* ModelSetting.m in Sources */,
+				C20C88DC1E4DA3A800D3942F /* MainViewController.m in Sources */,
+				C20C88F91E4DA53900D3942F /* SceneViewController.m in Sources */,
+				C203AA7C1E4DC89E003810C4 /* Model+Factory.m in Sources */,
+				C203AA411E4DABA5003810C4 /* Attribute.m in Sources */,
+				C203AA3E1E4DAB80003810C4 /* Settings.m in Sources */,
+				C203AA8A1E4DF035003810C4 /* Texture.m in Sources */,
+				C20C88D91E4DA3A800D3942F /* AppDelegate.m in Sources */,
+				C20C88D61E4DA3A800D3942F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C2BF8A931E48BCA800338022 /* Main.storyboard */ = {
+		C20C88DD1E4DA3A800D3942F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C2BF8A941E48BCA800338022 /* Base */,
+				C20C88DE1E4DA3A800D3942F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C2BF8A981E48BCA800338022 /* LaunchScreen.storyboard */ = {
+		C20C88E21E4DA3A800D3942F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C2BF8A991E48BCA800338022 /* Base */,
+				C20C88E31E4DA3A800D3942F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +507,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C2BF8A9C1E48BCA800338022 /* Debug */ = {
+		C20C88E61E4DA3A800D3942F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +555,7 @@
 			};
 			name = Debug;
 		};
-		C2BF8A9D1E48BCA800338022 /* Release */ = {
+		C20C88E71E4DA3A800D3942F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,49 +597,58 @@
 			};
 			name = Release;
 		};
-		C2BF8A9F1E48BCA800338022 /* Debug */ = {
+		C20C88E91E4DA3A800D3942F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 962RV8956Y;
 				INFOPLIST_FILE = ModelViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = arman.tagbergenev.ModelViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = "tag-arman.ModelViewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2cf2a69e-3110-46ff-8863-c1e6f1f2bf85";
+				PROVISIONING_PROFILE_SPECIFIER = "Generic IOS Dev";
 			};
 			name = Debug;
 		};
-		C2BF8AA01E48BCA800338022 /* Release */ = {
+		C20C88EA1E4DA3A800D3942F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 962RV8956Y;
 				INFOPLIST_FILE = ModelViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = arman.tagbergenev.ModelViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = "tag-arman.ModelViewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2cf2a69e-3110-46ff-8863-c1e6f1f2bf85";
+				PROVISIONING_PROFILE_SPECIFIER = "Generic IOS Dev";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2BF8A821E48BCA700338022 /* Build configuration list for PBXProject "ModelViewer" */ = {
+		C20C88CC1E4DA3A800D3942F /* Build configuration list for PBXProject "ModelViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2BF8A9C1E48BCA800338022 /* Debug */,
-				C2BF8A9D1E48BCA800338022 /* Release */,
+				C20C88E61E4DA3A800D3942F /* Debug */,
+				C20C88E71E4DA3A800D3942F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2BF8A9E1E48BCA800338022 /* Build configuration list for PBXNativeTarget "ModelViewer" */ = {
+		C20C88E81E4DA3A800D3942F /* Build configuration list for PBXNativeTarget "ModelViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2BF8A9F1E48BCA800338022 /* Debug */,
-				C2BF8AA01E48BCA800338022 /* Release */,
+				C20C88E91E4DA3A800D3942F /* Debug */,
+				C20C88EA1E4DA3A800D3942F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C2BF8A7F1E48BCA700338022 /* Project object */;
+	rootObject = C20C88C91E4DA3A800D3942F /* Project object */;
 }
